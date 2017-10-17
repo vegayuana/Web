@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ticket and Tour Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="style.css">
+	
+	<body>
+	<header class="head">
+		<image src="../icon/logo1.png" alt="logo" style="width:120px; height:70px; margin:10px;">
+		<ul>
+		<li><a href="../home/home.html" >Home</a></li>
+		<li><a href="../news/news.html" >News</a></li>
+		<li style="background-color:#f0dfad;"><a href="../TicketTour/Tickettour.html">Tours & Ticket</a></li>
+		<li><a href="../Merch/merch.html">Merch</a></li>
+		</ul>
+	</header>
+	
+	<div class="bg">
+	<div class="slideshow-container">
+	  <div class="mySlides fade">
+		<img src="concert1.jpg" style="width:100%">
+		<div class="text">March 13, 2016 - Portland, OR, Moda Center at the Rose Quarter</div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<img src="concert2.png" style="width:100%">
+		<div class="text">March 17, 2016 - San Jose, CA, SAP Center at San Jose</div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<img src="concert3.jpg" style="width:100%">
+		<div class="text">March 25, 2016 - Las Vegas, NV, MGM Grand Garden Arena</div>
+	  </div>
+
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<div style="text-align:center; margin:0px;">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+	
+	
+	<script>
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		for (i = 0; i < slides.length; i++) {
+		   slides[i].style.display = "none";  
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}    
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+		setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+	</script>
+
+	
+	<h1>Rock On Tour</h1>
+	<p>March 9, 2016 - Seattle, WA, KeyArena at Seattle Center</p>
+	<p>March 11, 2016 - Vancouver, BC, Pepsi Live! at Rogers Arena</p>
+	<p>March 13, 2016 - Portland, OR, Moda Center at the Rose Quarter</p>
+	<p>March 15, 2016 - Sacramento, CA, Sleep Train Arena</p>
+	<p>March 17, 2016 - San Jose, CA, SAP Center at San Jose</p>
+	<p>March 18, 2016 - Oakland, CA, Oracle Arena</p>
+	<p>March 20, 2016 - Los Angeles, CA, STAPLES Center</p>
+	<p>March 21, 2016 - Los Angeles, CA, STAPLES Center</p>
+	<p>March 25, 2016 - Las Vegas, NV, MGM Grand Garden Arena</p>
+	<p>March 26, 2016 - Fresno, CA, Save Mart Center</p>
+	<p>March 29, 2016 – San Diego, CA, Valley View Casino Center</p>
+	<p>March 30, 2016 - Glendale, AZ, Gila River Arena</p>
+	<p>April 2, 2016 - Salt Lake City, UT, Vivint Smart Home Arena</p>
+	<p>April 4, 2016 - Denver, CO, Pepsi Center</p>
+	<p>April 6, 2016 – Kansas City, MO, Sprint Center</p>
+	<p>April 7, 2016 - Tulsa, OK, BOK Center</p>
+	<p>April 9, 2016 - Houston, TX, Toyota Center</p>
+	<p>April 10, 2016 - Dallas, TX, American Airlines Center</p>
+	<p>April 12, 2016 - Atlanta, GA, Philips Arena</p>
+	<p>April 19, 2016 - St. Louis, MO, Scottrade Center</p>
+	<p>April 20, 2016 - Louisville, KY, KFC Yum! Center</p>
+	<p>April 22, 2016 - Rosemont, IL, Allstate Arena</p>
+	<p>April 23, 2016 - Rosemont, IL, Allstate Arena</p>
+	<p>April 25, 2016 - Auburn Hills, MI, The Palace Of Auburn Hills</p>
+	<p>April 26, 2016 - Cleveland, OH, Quicken Loans Arena</p>
+	<p>April 28, 2016 - Columbus, OH, Schottenstein Center</p>
+	<p>April 29, 2016 - Washington, DC, Verizon Center</p>
+	<p>May 4, 2016 - Brooklyn, NY, Barclays Center</p>
+	<p>May 5, 2016 - Brooklyn, NY, Barclays Center</p>
+	<p>May 7, 2016 - Philadelphia, PA, Wells Fargo Center</p>
+	<p>May 10, 2016 - Boston, MA, TD Garden</p>
+	<p>May 13, 2016 - Ottawa, ON, Canadian Tire Centre</p>
+	<p>May 14, 2016 - Quebec City, BC, Videotron Centre</p>
+	<p>May 16, 2016 - Montreal, BC, Bell Centre</p>
+	<p>May 18, 2016 - Toronto, ON, Air Canada Centre</p>
+	<p>May 19, 2016 - Toronto, ON, Air Canada Centre</p>
+	<p>June 11, 2016 - Winnipeg, MB, MTS Centre</p>
+	<p>June 13, 2016 - Calgary, AB, Scotiabank Saddledome</p>
+	<p>June 14, 2016 - Edmonton, AB, Rexall Place</p>
+	<p>June 16, 2016 - Saskatoon, SK, Credit Union Centre</p>
+	<p>June 18, 2016 - Fargo, ND, FARGODOME</p>
+	<p>June 19, 2016 - Minneapolis, MN, Target Center</p>
+	<p>June 21, 2016 - Lincoln, NE, Pinnacle Bank Arena</p>
+	<p>June 22, 2016 - Des Moines, IA, Wells Fargo Arena</p>
+	<p>June 24, 2016 - Cincinnati, OH, U.S. Bank Arena</p>
+	<p>June 25, 2016 - Indianapolis, IN, Bankers Life Fieldhouse</p>
+	<p>June 27, 2016 - Nashville, TN, Bridgestone Arena</p>
+	<p>June 29, 2016 - Jacksonville, FL, Jacksonville Veterans Memorial Arena</p>
+	<p>June 30, 2016 - Orlando, FL, Amway Center</p>
+	<p>July 2, 2016 - Miami, FL, AmericanAirlines Arena</p>
+	<p>July 6, 2016 – Greensboro, NC, Greensboro Coliseum</p>
+	<p>July 7, 2016 - Baltimore, MD, Royal Farms Arena</p>
+	<p>July 9, 2016 – Newark, NJ, Prudential Center</p>
+	<p>July 10, 2016 - Hartford, CT, XL Center</p>
+	<p>July 12, 2016 - Buffalo, NY, First Niagara Center</p>
+	<p>July 13, 2016 - Pittsburgh, PA, CONSOL Energy Center</p>
+	<p>July 15, 2016 - Atlantic City, NJ, Boardwalk Hall</p>
+	<p>July 18, 2016 - New York City, NY, Madison Square Garden</p>
+</pre>
+</div>
+	
+	<footer class="foot">
+		<p>Connect With Us</p>
+		<a href="https://www.gmail.com"><image src="../icon/mail.png" alt="mail" style="width:40px; height:40;"></a>
+		<a href="https://www.fb.com"><image src="../icon/fb.png" alt="fb" style="width:40px; height:40px;" ></a>
+		<a href="https://www.twitter.com/dualipa"><image src="../icon/twitter.png" alt="twitter" style="width:40px; height:40;"></a>
+		<a href="https://www.youtube.com/watch?v=fEOyePhElr4"><image src="../icon/yt.png" alt="youtube" style="width:40px; height:40;"></a>
+		<a href="https://www.instagram.com/dualipa"><image src="../icon/ig.png" alt="ig" style="width:40px; height:40;">
+	</footer>
+	</body>
+</html>
