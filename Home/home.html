@@ -63,6 +63,7 @@
 		height:40px;
 		font-size: 25px;
 		margin:auto auto 40px auto ;
+		transition: 0.2s;
 		
 	}
 	.bg a:hover {
@@ -70,6 +71,16 @@
 		color: #212121;
 		opacity:0.9;
 		border: 3px solid #f0dfad;
+	}
+	.foot{
+		background-color:#212121;
+		text-align:center;
+	}
+	.foot p{
+		font-size:20px; 
+		font-family:cho; 
+		margin:0; 
+		color:#edf0da;
 	}
 	@font-face {
 		font-family: cho;
@@ -89,8 +100,7 @@
 <body>
 	<header class="head">
 		<ul>
-		<li style = "float: left"><image src="../icon/logo1.png" alt="logo1.jpg" style="width:120px; height:70px; margin:10px;"></li>
-		<li style="float: right"><p><a href="../loginsignup/signup.html">Sign up</a></p></li>
+		<li style ="float: left"><image src="../icon/logo1.png" alt="logo1.jpg" style="width:120px; height:70px; margin:10px;"></li>
 		<li style="float: right"><p><a href="../loginsignup/login.html">Log In</a></p></li>
 		</ul>
 	</header>
@@ -102,15 +112,13 @@
 		
 	</div>
 	
-	<footer style="background-color:#212121">
-		<p style="text-align:center; font-size:20px; font-family:candara; margin:0; color:#edf0da">Connect With Us</p>
-		<div style="text-align:center">
+	<footer class="foot">
+		<p>Connect With Us</p>
 		<a href="https://www.gmail.com"><image src="../icon/mail.png" alt="mail" style="width:45px; height:45;"></a>
 		<a href="https://www.fb.com"><image src="../icon/fb.png" alt="fb" style="width:45px; height:45px;" ></a>
 		<a href="https://www.twitter.com/dualipa"><image src="../icon/twitter.png" alt="twitter" style="width:45px; height:45px;"></a>
 		<a href="https://www.youtube.com/watch?v=fEOyePhElr4"><image src="../icon/yt.png" alt="youtube" style="width:45px; height:45px;"></a>
 		<a href="https://www.instagram.com/dualipa"><image src="../icon/ig.png" alt="ig" style="width:45px; height:45px;">
-		</div>
 	</footer>
 </body>
 </html>

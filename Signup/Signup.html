@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Sign Up </title>
+		<style>
+			body{
+				background: url(bg.png) no-repeat fixed;
+				background-size: 100% 100%;
+			}
+			@font-face{
+				font-family: eth;
+				src : url(ETH.ttf);
+			}
+			@font-face{
+				font-family: candara;
+				src : url(Candara.ttf);
+			}
+			.box {
+				margin-top: 125px;
+				height: 420px;
+				width: 360px;
+				background-color : #A89B8C;
+				font-family : eth;
+				font-size: 15pt;
+				font-weight: bold;
+			}
+			.box ul {
+				width : 100%;
+				height : 13%;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #655e57;
+			}
+			.box li {
+				float: left;
+			}
+			li a.active {
+				background-color: #A89B8C;
+			}
+			.box li a {
+				display: block;
+				color: #212121;
+				text-align: center;
+				padding: 18px 58.7px;
+				text-decoration: none;
+			}
+			.box li a:hover {
+				background-color: #d5cabe;
+			}
+			.isi {
+				margin : 20px 40px 20px 40px;
+			}
+			.tulisan {
+				float : left;
+				margin : 20px 0px 5px 10px;
+			}
+			input[type=text]{
+				font-family: candara;
+				width: 100%;
+				box-sizing: border-box;
+				border: 1px solid #212121;
+				background-color: #212121;
+				padding: 5px 20px 5px 20px;
+				color : #EDF0DA;
+				font-size: 15pt;
+				transition: 0.5s;
+				border-radius: 5px;
+			}
+			input[type=text]:focus{
+				border: #EDF0DA;
+			}
+			input[type=submit]{
+				background-color: #B23333;
+				border: none;
+				color: #EDF0DA;
+				padding: 16px 32px;
+				margin: 25px;
+				cursor: pointer;
+				font-family: eth;
+				font-size: 15pt;
+				font-weight: bold;
+				border-radius: 5px;
+			}
+			input[type=submit]:hover {
+				background-color: #c05252;
+			}
+			.foot {
+				width: 50%;
+				float: right;
+				margin-top: 500px;
+				font-family: candara;
+				font-size: 18pt;
+				color : #EDF0DA;
+			}
+			.huruf{
+				letter-spacing: 2px;
+				margin: 5px;
+			}
+			.kiri {
+				float : left;
+				width : 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="kiri">
+		<center>
+		<div class="box">
+			<ul>
+			  <li><a class="active" href="">Sign up</a></li>
+			  <li><a href="">Log in</a></li>
+			</ul>
+			<div class="isi">
+				<div class="tulisan">USERNAME</div>
+				<center><input type="text" name="user"></center>
+				<div class="tulisan">PASSWORD</div>
+				<center><input type="text" name="password"></center>
+				<div class="tulisan">E-MAIL</div>
+				<center><input type="text" name="email">
+				<input type="submit" value="SIGN UP"></center>
+			</div>	
+		</div>
+		</center>
+		</div>
+		<div class="foot">
+			<center>
+			<div class="huruf">Connect With Us</div>
+			<a href=""> 
+				<img src="..\icon\mail.png" style="width:70px;height:70px;">
+			</a>
+			<a href=""> 
+				<img src="..\icon\fb.png" style="width5:73px;height:73px;">
+			</a>
+			<a href=""> 
+				<img src="..\icon\twitter.png" style="width:70px;height:70px;">
+			</a>
+			<a href=""> 
+				<img src="..\icon\yt.png" style="width:70px;height:70px;">
+			</a>
+			<a href=""> 
+				<img src="..\icon\ig.png" style="width:70px;height:70px;">
+			</a>
+			</center>
+		</div>
+	</body>
+</html>

@@ -50,32 +50,50 @@
 		color: #b23333;
 	}
 	.bg{
-		margin:5px 70px 40px;
-		background-color:#f0dfad;
-		padding:5px;
+		background-image: url("../Mockup/bgmerch.png");
+		width:100%;
+		height:100%;
+		background-repeat:no-repeat;
+		background-position: fixed;
+		background-size: cover;
+		position:relative;
+		margin:0;
 		text-align:center;
 	}
-	.bg p{
-		font-family:sego;
-		font-size:20px;
-		padding:5px;
-		margin:0px;
+	.bagian{
+		width: 640px;
+		
+		
 	}
-	.bg p:hover{
-		background-color:#edf0da;
-		width:auto;
-		margin:0px 200px;
-	}
-	.bg h1{
-		color:#b23333;
-		font-family:eth;
+	.kolom{
+		background-color:#f0dfad;
+		border-radius:5px;
+		margin: auto;
+		width:310px;
+		padding:10px 5px;
 	}
 	.foot{
 		background-color:#212121;
-		text-align:center; 
+		text-align:center;
+	}
+	.foot p{
 		font-size:20px; 
 		font-family:cho; 
-		margin:0;	
+		margin:0; 
 		color:#edf0da;
+	}
+	
+	.btn {
+		padding: 10px 20px;
+		background-color: #212121;
+		color:#edf0da;
+		border-radius: 0;
+		transition: .2s;
+		margin:auto;
+	}
+	.btn:hover {
+		border: 1px solid #333;
+		background-color: #f0dfad;
+		color: #edf0da;
 	}
 	
