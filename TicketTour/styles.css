@@ -38,7 +38,7 @@
 	.head li a {
 		float:left;
 		display: block;
-		color: #b23333;
+		color: #edf0da;
 		text-align: center;
 		text-decoration:none;
 		font-family: cho;
@@ -72,10 +72,13 @@
 	}
 	.foot{
 		background-color:#212121;
-		text-align:center; 
+		text-align:center;
+	}
+	.foot p{
 		font-size:20px; 
 		font-family:cho; 
-		margin:0;	
+		margin:0; 
+		padding:3px;
 		color:#edf0da;
 	}
 	

@@ -2,76 +2,68 @@
 <html>
 	<head>
 		<title> News </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 			body {
 				margin : 0px;
-				padding : 0px;
 			}
-			#header{
-				width: auto;
+			.head{
+				width:100%;
+				background-color:#212121;
+				position:sticky;
+			}
+			.head ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				top:0;
+				overflow: hidden;
 				background-color: #212121;
-				height: 100px;
-				margin : 0px;
-				padding : 0px;
+				width:100%;
 			}
-			.adv{
-				padding: 15px 15px 10px 15px;
-				padding-left: 80px;
+			.head li a {
+				float:left;
+				display: block;
+				color: #edf0da;
+				text-align: center;
+				text-decoration:none;
+				font-family: cho;
+				font-size:20px;
+				padding: 10px 70px;
+			}
+			.head li a:hover {
+				background-color: #f0dfad;
+				color: #b23333;
 			}
 			@font-face{
 				font-family: adv;
 				src : url(CAFETA_.TTF);
 			}
-			ul {
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-				overflow: hidden;
-				background-color: #212121;
-				position: sticky;
-			}
-
-			li {
-				float: left;
-			}
-			li a {
-				width: 120px;
-				display: block;
-				color: #EDF0DA;
-				text-align: center;
-				padding: 14px 16px;
-				text-decoration: none;
-				font-family: cho;
-			}
-			li a:hover {
-				background-color: #F0DFAD;
-				color : #212121;
-				transition: 0.5s;
-			}	
 			@font-face{
 				font-family: cho;
 				src : url(Chosence.ttf);
-			}
-			#footer {
-				width: auto;
-				background-color: #212121;
-				height: 100px;
-				margin : 0px;
-				padding : 0px;
-				font-family: candara;
-				color : #EDF0DA;
-				font-size: 20px;
 			}
 			@font-face{
 				font-family: candara;
 				src : url(Candara.ttf);
 				float: bottom;
 			}
+			.foot{
+				background-color:#212121;
+				text-align:center;
+			}
+			.foot p{
+				font-size:20px; 
+				font-family:cho; 
+				margin:0; 
+				padding:3px;
+				color:#edf0da;
+			}
 			.connect {
 				padding: 3px;
 			}
 			#content {
-				margin-top:45px;
+				margin-top:0;
 				width: auto;
 				height: 1200px;
 				background-image: url("newsbg.png");
@@ -155,30 +147,24 @@
 				position: sticky;
 				top: 0;
 			}
+			.logo{
+				background-color:#212121;
+			}
 			</style>
 	</head>
 	<body>
-		<div id="header">
-			<div class="adv">
-<<<<<<< HEAD
-			<img src="../icon/logo1.png"style="width:100px;height:70px;">
-||||||| merged common ancestors
-			<img src="logo1.png"style="width:100px;height:70px;">
-=======
-			<img src="..\icon\logo1.png"style="width:100px;height:70px;">
->>>>>>> 5e75ecf8192a46f076802fe12927e263585d27f4
-			</div>
-			<div class="sticky">
-				<nav>
-				<ul>
-					<li><a href="../home/home.html">Home</a></li>
-					<li><a href="">News</a></li>
-					<li><a href="../tourticket/tourticket.html">Tours & Tickets</a></li>
-					<li><a href="../merch/merch.html">Merch</a></li>
-				</ul>
-				</nav>
-			</div>
+		<div class="logo">
+			<image src="../icon/logo1.png" alt="logo" style="width:120px; height:70px; margin:10px 10px 0 10px;">
 		</div>
+		<header class="head">
+			<ul>
+			<li><a href="../home/home.html" >Home</a></li>
+			<li><a href="../news/news.html" >News</a></li>
+			<li><a href="../TicketTour/Tickettour.html">Tours & Ticket</a></li>
+			<li><a href="../Merch/merch.html">Merch</a></li>
+			</ul>
+		</header>
+	
 		<div id="content">
 			<div class="berita">
 				<div class="news">NEWS</div>
@@ -194,25 +180,13 @@
 				</div>
 			</div>
 		</div>
-		<div id="footer">
-			<center>
-				<div class="connect">Connect With Us</div>
-				<a href=""> 
-				<img src="..\icon\mail.png" style="width:45px;height:45px;">
-				</a>
-				<a href=""> 
-				<img src="..\icon\fb.png" style="width5:45px;height:45px;">
-				</a>
-				<a href=""> 
-				<img src="..\icon\twitter.png" style="width:45px;height:45px;">
-				</a>
-				<a href=""> 
-				<img src="..\icon\yt.png" style="width:45px;height:45px;">
-				</a>
-				<a href=""> 
-				<img src="..\icon\ig.png" style="width:45px;height:45px;">
-				</a>
-			</center>
-		</div>
+		<footer class="foot">
+			<p>Connect With Us</p>
+			<a href="https://www.gmail.com"><image src="../icon/mail.png" alt="mail" style="width:45px; height:45px;"></a>
+			<a href="https://www.fb.com"><image src="../icon/fb.png" alt="fb" style="width:45px; height:45px;" ></a>
+			<a href="https://www.twitter.com/dualipa"><image src="../icon/twitter.png" alt="twitter" style="width:45px; height:45px;"></a>
+			<a href="https://www.youtube.com/watch?v=fEOyePhElr4"><image src="../icon/yt.png" alt="youtube" style="width:45px; height:45px;"></a>
+			<a href="https://www.instagram.com/dualipa"><image src="../icon/ig.png" alt="ig" style="width:45px; height:45px;">
+		</footer>
 	<body>
 </html>
