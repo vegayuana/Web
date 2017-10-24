@@ -10,6 +10,10 @@ body{
 				font-family: candara;
 				src : url(../fonts/Candara.ttf);
 			}
+			@font-face{
+				font-family: cho;
+				src : url(../fonts/Chosence.ttf);
+			}
 			.box {
 				margin-top: 125px;
 				height: 420px;
@@ -85,13 +89,15 @@ body{
 				width: 50%;
 				float: right;
 				margin-top: 500px;
-				font-family: candara;
-				font-size: 18pt;
-				color : #EDF0DA;
+				background-color:#212121;
+				text-align:center;
 			}
-			.huruf{
-				letter-spacing: 2px;
-				margin: 5px;
+			.foot p{
+				font-size:20px; 
+				font-family:cho; 
+				margin:0; 
+				padding:3px;
+				color:#edf0da;
 			}
 			.kiri {
 				float : left;

@@ -21,6 +21,10 @@
 		font-family: adv;
 		src : url(../fonts/CAFETA_.TTF);
 	}
+	@font-face{
+		font-family: candara;
+		src : url(../fonts/Candara.TTF);
+	}
 	.head{
 		width:100%;
 		background-color:#212121;
@@ -70,9 +74,11 @@
 		text-align:center;
 	}
 	.col-sm-4{
-		background-color:rgba(240, 223, 173, 0.8);
+		background-color:rgba(240, 223, 173, 0.7);
 		border-radius:10px;
 		margin-bottom:15px;
+		background-color:#a89b8c;
+		padding:10px;
 	}
 	.foot{
 		background-color:#212121;
@@ -91,7 +97,6 @@
 		color:#edf0da;
 		border-radius: 0;
 		transition: .2s;
-		margin:auto;
 	}
 	.btn:hover {
 		border: 1px solid #333;

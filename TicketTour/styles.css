@@ -21,6 +21,10 @@
 		font-family: adv;
 		src : url(../fonts/CAFETA_.TTF);
 	}
+	@font-face{
+		font-family: candara;
+		src : url(../fonts/Candara.ttf);
+	}
 	.head{
 		width:100%;
 		background-color:#212121;
@@ -49,9 +53,15 @@
 		background-color: #f0dfad;
 		color: #b23333;
 	}
+	.a{
+		background-image: url(bg.jpg);
+		background-size: 100% 100%;
+		background-attachment: fixed;
+		margin: 0px 0px 0px 0px;
+	}
 	.bg{
-		margin:5px 70px 40px;
-		background-color:#f0dfad;
+		margin:0px 7% 0px;
+		background-color:rgba(240, 223, 173, 0.7);
 		padding:5px;
 		text-align:center;
 	}
