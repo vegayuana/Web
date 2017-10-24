@@ -21,6 +21,10 @@
 		font-family: adv;
 		src : url(../fonts/CAFETA_.TTF);
 	}
+	@font-face{
+		font-family: candara;
+		src : url(../fonts/Candara.TTF);
+	}
 	.head{
 		width:100%;
 		background-color:#212121;
@@ -60,8 +64,9 @@
 	}
 	.bagian{
 		margin:0% 5% 0% 20%;
-		background-color:#a89b8c;
+		background-color:rgba(33,33,33,0.8);
 		padding:10px;
+		color : #EDF0DA;
 	}
 	
 	.foot{
@@ -70,7 +75,7 @@
 	}
 	.foot p{
 		font-size:20px; 
-		font-family:cho; 
+		font-family:candara; 
 		margin:0; 
 		padding:3px;
 		color:#edf0da;
@@ -82,7 +87,6 @@
 		color:#edf0da;
 		border-radius: 0;
 		transition: .2s;
-		margin:auto;
 	}
 	.btn:hover {
 		border: 1px solid #333;
