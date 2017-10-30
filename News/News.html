@@ -3,159 +3,13 @@
 	<head>
 		<title> News </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<style>
-			body {
-				margin : 0px;
-			}
-			.head{
-				width:100%;
-				background-color:#212121;
-				position:sticky;
-			}
-			.head ul {
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-				top:0;
-				overflow: hidden;
-				background-color: #212121;
-				width:100%;
-			}
-			.head li a {
-				float:left;
-				display: block;
-				color: #edf0da;
-				text-align: center;
-				text-decoration:none;
-				font-family: cho;
-				font-size:20px;
-				padding: 10px 70px;
-			}
-			.head li a:hover {
-				background-color: #f0dfad;
-				color: #b23333;
-			}
-			@font-face{
-				font-family: adv;
-				src : url(CAFETA_.TTF);
-			}
-			@font-face{
-				font-family: cho;
-				src : url(Chosence.ttf);
-			}
-			@font-face{
-				font-family: candara;
-				src : url(Candara.ttf);
-				float: bottom;
-			}
-			.foot{
-				background-color:#212121;
-				text-align:center;
-			}
-			.foot p{
-				font-size:20px; 
-				font-family:cho; 
-				margin:0; 
-				padding:3px;
-				color:#edf0da;
-			}
-			.connect {
-				padding: 3px;
-			}
-			#content {
-				margin-top:0;
-				width: auto;
-				height: 1200px;
-				background-image: url("newsbg.png");
-				background-attachment: fixed;
-			}
-			.berita{
-				margin-left: 450px;
-			}
-			.news{
-				padding : 40px;
-				font-size: 120pt;
-				font-family: eth;
-				color: #B23333;
-				font-weight : bold;
-				text-align: center;
-			}
-			@font-face{
-				font-family: eth;
-				src: url(ETH.ttf);
-			}
-			.isi {
-				width: auto;
-				height: 200px;
-				padding: 10px;
-			}
-			.gambar {
-				width: auto;
-				height : auto;
-				margin: 0px;
-				float: left;
-			}
-			.cerita {
-				margin-left : 220px;
-				width: auto;
-				height: 200px;
-			}
-			.judul {
-				margin: 10px;
-				font-family: eth;
-				font-size: 20pt;
-				font-weight : bold;
-			}
-			.judul a{
-				color: #F0DFAD;
-				text-decoration: none;
-			}
-			.judul a:hover {
-				color : #212121;
-				transition: 0.5s;
-			}	
-			.isinya{
-				font-family: eth;
-				color : #EDF0DA;
-				font-size: 15pt;
-				margin-bottom: 15px;
-			}
-			@font-face{
-				font-family: sego;
-				src: url(segoeui.ttf);
-			}
-			.read{
-				background-color: none;
-			}
-			.read a {
-				width: auto;
-				height: 20px;
-				display: block;
-				color: #EDF0DA;
-				text-align: center;
-				padding: 14px 16px;
-				text-decoration: none;
-				font-family: eth;
-			}
-			.read a:hover {
-				background-color: #F0DFAD;
-				color : #B23333;
-				transition: 0.5s;
-			}	
-			.sticky{
-				position: -webkit-sticky;
-				position: sticky;
-				top: 0;
-			}
-			.logo{
-				background-color:#212121;
-			}
-			</style>
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<div class="logo">
 			<image src="../icon/logo1.png" alt="logo" style="width:120px; height:70px; margin:10px 10px 0 10px;">
 		</div>
+		
 		<header class="head">
 			<ul>
 			<li><a href="../home/home.html" >Home</a></li>
@@ -168,18 +22,17 @@
 		<div id="content">
 			<div class="berita">
 				<div class="news">NEWS</div>
+				
 				<div class="isi">
 					<div class="gambar"><img src="!.png" style="width:200px;height:200px"></div>
 					<div class="cerita">
-						<div class="judul"><a href="">Judul Berita</a></div>
-						<p class="isinya">aku punya anjing kecil. kuberi nama heli. dia senang menari-nari, serta berlari-lari. Heli! Guk guk guk!</p>
-						<div class="read">
+						<div class="judul"><a href="">ADV New Song </a></div>
+						
 						<a href="">Read More</a>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 		<footer class="foot">
 			<p>Connect With Us</p>
 			<a href="https://www.gmail.com"><image src="../icon/mail.png" alt="mail" style="width:45px; height:45px;"></a>

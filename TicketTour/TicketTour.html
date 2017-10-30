@@ -15,7 +15,7 @@
 		<ul>
 		<li><a href="../home/home.html" >Home</a></li>
 		<li><a href="../news/news.html" >News</a></li>
-		<li style="background-color:#f0dfad;"><a href="../TicketTour/Tickettour.html">Tours & Ticket</a></li>
+		<li><a href="../TicketTour/Tickettour.html">Tours & Ticket</a></li>
 		<li><a href="../Merch/merch.html">Merch</a></li>
 		</ul>
 	</header>
@@ -42,15 +42,17 @@
 	<br>
 
 	<div style="text-align:center; margin:0px;">
+	  <span class="dot" onclick="currentSlide(0)"></span> 
 	  <span class="dot" onclick="currentSlide(1)"></span> 
 	  <span class="dot" onclick="currentSlide(2)"></span> 
-	  <span class="dot" onclick="currentSlide(3)"></span> 
 	</div>
 	
 	<script>
 	var slideIndex = 0;
 	showSlides();
-
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
 	function showSlides() {
 		var i;
 		var slides = document.getElementsByClassName("mySlides");
@@ -64,8 +66,7 @@
 			dots[i].className = dots[i].className.replace(" active", "");
 		}
 		slides[slideIndex-1].style.display = "block";  
-		dots[slideIndex-1].className += " active";
-		setTimeout(showSlides, 5000); // Change image every 2 seconds
+		setTimeout(showSlides, 10000); // Change image every 5 seconds
 	}
 	</script>
 
