@@ -1,0 +1,105 @@
+body{
+				background: url(bg.png) no-repeat fixed;
+				background-size: 100% 100%;
+			}
+			@font-face{
+				font-family: eth;
+				src : url(../fonts/ETH.ttf);
+			}
+			@font-face{
+				font-family: candara;
+				src : url(../fonts/Candara.ttf);
+			}
+			@font-face{
+				font-family: cho;
+				src : url(../fonts/Chosence.ttf);
+			}
+			.box {
+				margin-top: 125px;
+				height: 420px;
+				width: 360px;
+				background-color : #A89B8C;
+				font-family : eth;
+				font-size: 15pt;
+				font-weight: bold;
+			}
+			.box ul {
+				width : 100%;
+				height : 13%;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #655e57;
+			}
+			.box li {
+				float: left;
+			}
+			li a.active {
+				background-color: #A89B8C;
+			}
+			.box li a {
+				display: block;
+				color: #212121;
+				text-align: center;
+				padding: 18px 58.7px;
+				text-decoration: none;
+			}
+			.box li a:hover {
+				background-color: #d5cabe;
+			}
+			.isi {
+				margin : 20px 40px 20px 40px;
+			}
+			.tulisan {
+				float : left;
+				margin : 20px 0px 5px 10px;
+			}
+			input[type=text]{
+				font-family: candara;
+				width: 100%;
+				box-sizing: border-box;
+				border: 1px solid #212121;
+				background-color: #212121;
+				padding: 5px 20px 5px 20px;
+				color : #EDF0DA;
+				font-size: 15pt;
+				transition: 0.5s;
+				border-radius: 5px;
+			}
+			input[type=text]:focus{
+				border: #EDF0DA;
+			}
+			input[type=submit]{
+				background-color: #B23333;
+				border: none;
+				color: #EDF0DA;
+				padding: 16px 32px;
+				margin: 25px;
+				cursor: pointer;
+				font-family: eth;
+				font-size: 15pt;
+				font-weight: bold;
+				border-radius: 5px;
+			}
+			input[type=submit]:hover {
+				background-color: #c05252;
+			}
+			.foot {
+				width: 50%;
+				float: right;
+				margin-top: 500px;
+				background-color:#212121;
+				text-align:center;
+			}
+			.foot p{
+				font-size:20px; 
+				font-family:cho; 
+				margin:0; 
+				padding:3px;
+				color:#edf0da;
+			}
+			.kiri {
+				float : left;
+				width : 50%;
+			}

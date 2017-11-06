@@ -1,0 +1,80 @@
+body, html {
+		height: 100%;
+		margin:0;
+	}
+	.head ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #212121;
+	}
+	.head li a {
+		display: block;
+		background-color:#b23333;
+		color: #edf0da;
+		border-radius:5px;
+		text-align: center;
+		font-family: eth;
+		font-size:20px;
+		text-decoration:none;
+		margin:20px 60px 10px 0px;
+		padding: 15px;
+	}
+	.head li a:hover {
+		background-color: rgba(240, 223, 173, 0.9);
+		color: #212121;
+		transition:0.2s;
+	}
+	.bg{ 
+		background-image: url("bg1.jpg");
+		height:425px;
+		width:100%;
+		background-repeat:no-repeat;
+		background-size: cover;
+		padding:0;
+		margin:0;
+		padding-top: 73px;
+	}
+	.bg a{
+		display: block;
+		font-family : cho;
+		font-size: 25px;
+		color: #edf0da;
+		background-color: rgba(33, 33, 33, 0.5);
+		border-radius:5px;
+		text-align: center;
+		text-decoration: none;
+		padding: 20px;
+		max-width:300px;
+		height:40px;
+		margin:auto auto 40px auto ;
+		transition: 0.2s;
+	}
+	.bg a:hover {
+		background-color: rgba(240, 223, 173, 0.9);
+		color: #b23333;
+	}
+	.foot{
+		background-color:#212121;
+		text-align:center;
+	}
+	.foot p{
+		font-size:20px; 
+		font-family:cho; 
+		margin:0; 
+		padding:3px;
+		color:#edf0da;
+	}
+	@font-face {
+		font-family: cho;
+		src : url(../fonts/Chosence.ttf);
+	}
+	@font-face {
+		font-family: candara;
+		src : url(../fonts/Candara.ttf);
+	}
+	@font-face {
+		font-family: eth;
+		src : url(../fonts/ETH.ttf);
+	}
