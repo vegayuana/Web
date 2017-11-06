@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 06, 2017 at 05:23 PM
+-- Generation Time: Nov 06, 2017 at 05:45 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -61,7 +61,7 @@ CREATE TABLE `pembelian_merch` (
   `total` float NOT NULL,
   `no_rek` varchar(30) NOT NULL,
   `waktu_pembayaran` datetime NOT NULL,
-  `no_ticket` int(11) NOT NULL,
+  `id_barang` int(11) NOT NULL,
   `id_users` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -124,7 +124,7 @@ ALTER TABLE `merch`
 ALTER TABLE `pembelian_merch`
   ADD PRIMARY KEY (`id_transaksi`),
   ADD KEY `id_users` (`id_users`),
-  ADD KEY `no_ticket` (`no_ticket`);
+  ADD KEY `id_barang` (`id_barang`);
 
 --
 -- Indexes for table `pembelian_tiket`
@@ -185,8 +185,8 @@ ALTER TABLE `users`
 -- Constraints for table `pembelian_merch`
 --
 ALTER TABLE `pembelian_merch`
-  ADD CONSTRAINT `id_users` FOREIGN KEY (`id_users`) REFERENCES `users` (`id`),
-  ADD CONSTRAINT `pembelian_merch_ibfk_1` FOREIGN KEY (`no_ticket`) REFERENCES `ticket` (`no_ticket`);
+  ADD CONSTRAINT `id_barang` FOREIGN KEY (`id_barang`) REFERENCES `merch` (`id_barang`),
+  ADD CONSTRAINT `id_users` FOREIGN KEY (`id_users`) REFERENCES `users` (`id`);
 
 --
 -- Constraints for table `pembelian_tiket`
