@@ -18,7 +18,7 @@
 				<div class="tulisan">USERNAME</div>
 				<center><input type="text" name="user"></center>
 				<div class="tulisan">PASSWORD</div>
-				<center><input type="text" name="pass"></center>
+				<center><input type="text" name="password"></center>
 				<div class="tulisan">E-MAIL</div>
 				<center><input type="text" name="email">
 				<input type="submit" value="SIGN UP"></center>
