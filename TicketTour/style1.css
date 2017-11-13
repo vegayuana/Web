@@ -1,0 +1,163 @@
+	body, html {
+		height: 100%;
+		margin:0;
+	}
+	.logo{
+		background-color:#212121;
+	}
+	@font-face{
+		font-family: cho;
+		src : url(../fonts/Chosence.ttf);
+	}
+	@font-face{
+		font-family: eth;
+		src: url(../fonts/ETH.ttf);
+	}
+	@font-face{
+		font-family: sego;
+		src: url(../fonts/segoeui.ttf);
+	}
+	@font-face{
+		font-family: adv;
+		src : url(../fonts/CAFETA_.TTF);
+	}
+	@font-face{
+		font-family: candara;
+		src : url(../fonts/Candara.ttf);
+	}
+	.head{
+		width:100%;
+		background-color:#212121;
+		position:sticky;
+	}
+	.head ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		top:0;
+		overflow: hidden;
+		background-color: #212121;
+		width:100%;
+	}
+	.head li a {
+		float:left;
+		display: block;
+		color: #edf0da;
+		text-align: center;
+		text-decoration:none;
+		font-family: cho;
+		font-size:20px;
+		padding: 10px 70px;
+	}
+	.head li a:hover {
+		background-color: #f0dfad;
+		color: #b23333;
+	}
+	.a{
+		background-color: white;
+		margin: 0px 0px 0px 0px;
+	}
+	.content{
+		padding:30px;
+		background-color: rgba(168, 155, 140, 0.3);
+		width: auto;
+	}
+	.foot{
+		background-color:#212121;
+		text-align:center;
+	}
+	.foot p{
+		font-size:20px; 
+		font-family:cho; 
+		margin:0; 
+		padding:3px;
+		color:#edf0da;
+	}
+	input[type=text]{
+		font-family: candara;
+		width: 30%;
+		box-sizing: border-box;
+		border: 1px solid #212121;
+		background-color: #212121;
+		padding: 5px 20px 5px 20px;
+		color : #EDF0DA;
+		font-size: 15pt;
+		transition: 0.5s;
+		border-radius: 5px;
+	}
+	input[type=text]:focus{
+		border: #EDF0DA;
+	}
+	input[type=submit]{
+		background-color: #B23333;
+		border: none;
+		color: #EDF0DA;
+		padding: 16px 32px;
+		margin: 25px;
+		cursor: pointer;
+		font-family: eth;
+		font-size: 15pt;
+		font-weight: bold;
+		border-radius: 5px;
+		margin-bottom:0px;
+	}
+	input[type=submit]:hover {
+		background-color: #c05252;
+	}
+	input[name=alamat]{
+		width:50%;
+	}
+	input[type=number]{
+		font-family: candara;
+		width: 10%;
+		box-sizing: border-box;
+		border: 1px solid #212121;
+		background-color: #212121;
+		padding: 5px 20px 5px 20px;
+		color : #EDF0DA;
+		font-size: 15pt;
+		transition: 0.5s;
+		border-radius: 5px;
+	}
+	select{
+		font-family: candara;
+		width: 10%;
+		box-sizing: border-box;
+		border: 1px solid #212121;
+		background-color: #212121;
+		padding: 5px 20px 5px 20px;
+		color : #EDF0DA;
+		font-size: 15pt;
+		transition: 0.5s;
+		border-radius: 5px;
+		margin-bottom: 15px;
+	}
+	textarea{
+		font-family: candara;
+		width: 10%;
+		box-sizing: border-box;
+		border: 1px solid #212121;
+		background-color: #212121;
+		padding: 5px 20px 5px 20px;
+		color : #EDF0DA;
+		font-size: 15pt;
+		transition: 0.5s;
+		border-radius: 5px;
+		width: 60%;
+	}
+	input[type=number],input[type=text]{
+		margin-bottom: 20px;
+	}
+	.tulisan{
+		font-size:20px;
+		font-family: eth;
+		color : #212121;
+		text-align:left;
+	}
+	.tiket{
+		text-align: center;
+		font-size:30px;
+		font-family: candara;
+		color : #212121;
+		margin-bottom:30px;
+	}
