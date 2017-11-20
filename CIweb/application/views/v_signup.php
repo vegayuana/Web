@@ -3,7 +3,7 @@
 	<head>
 		<title> Sign Up </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="<?php echo base_url(); ?>static/signup/styles.css">
+		<link rel="stylesheet" href="<?php echo base_url(); ?>static/css/styles.css">
 	</head>
 	<body>
 		<div class="kiri">

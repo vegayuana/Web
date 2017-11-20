@@ -3,7 +3,7 @@
 <head>
 	<title>Official Web Of ADV</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>static/home/styles.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>static/css/homestyles.css">
 </head>
 
 <body>

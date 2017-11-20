@@ -3,7 +3,7 @@
 <head>
 	<title>Merchandise Page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>static/Merch/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>static/css/merchstyles.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 	<body>
@@ -28,7 +28,7 @@
 	  <div class="row">
 	  <?php foreach($response as $data){ ?>
 		<div class="col-sm-4">
-			<img src="<?php echo base_url(); ?>static/Merch/<?php echo $data['img']?>" alt="<?php echo $data['nama_barang']?>" width="100%">
+			<img src="<?php echo base_url(); ?>static/css/<?php echo $data['img']?>" alt="<?php echo $data['nama_barang']?>" width="100%">
 			<p><strong><?php echo $data['nama_barang'] ?></strong></p>
 			<p><?php echo $data['harga'] ?></p>
             

@@ -3,8 +3,8 @@
 <head>
 	<title>Ticket and Tour Page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>static/TicketTour/stylesslide.css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>static/TicketTour/styles.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>static/css/tntstylesslide.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>static/css/tntstyles.css">
 </head>
 	<body>
 	<div class="logo">
