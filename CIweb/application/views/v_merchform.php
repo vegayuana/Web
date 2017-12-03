@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
     <title>Form Merch</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +24,11 @@
 	<div class="bg">
         <div class="isi">
         <div class="judul">
-            
+             <?php foreach($response->result() as $data){ ?>
+                <img src="<?php echo base_url(); ?>static/css/<?php echo $data->img ?>"  width="100%">
+                <p><?php echo $data->nama_barang ?></p>
+                <p><?php echo $data->harga ?></p>
+            <?php } ?>
             
             </div>
         <div class="gambar"><img src="merch1.jpg" alt="merch" width="100%"></div>

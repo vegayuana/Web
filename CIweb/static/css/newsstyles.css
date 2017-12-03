@@ -2,9 +2,6 @@ body, html {
 	height: 100%;
 	margin:0;
 }
-.logo{
-	background-color:#212121;
-}
 	@font-face{
 		font-family: cho;
 		src : url(../fonts/Chosence.ttf);
@@ -25,11 +22,25 @@ body, html {
 		font-family: candara;
 		src : url(../fonts/Candara.TTF);
 	}
-.head{
-	position : sticky;
-	width:100%;
+.logo{
 	background-color:#212121;
-	position:sticky;
+}
+.logo li a {
+		display: block;
+		background-color:#b23333;
+		color: #edf0da;
+		border-radius:5px;
+		text-align: center;
+		font-family: eth;
+		font-size:20px;
+		text-decoration:none;
+		margin:20px 60px 10px 0px;
+		padding: 15px;
+	}
+.logo li a:hover {
+		background-color: rgba(240, 223, 173, 0.9);
+		color: #212121;
+		transition:0.2s
 }
 .head ul {
 	list-style-type: none;

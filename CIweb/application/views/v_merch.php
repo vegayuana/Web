@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
+    <?php
+        if(isset($this->session->userdata['logged_in'])){
+            $username = ($this->session->userdata['logged_in']['username']);
+        }
+    ?>
 	<title>Merchandise Page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>static/css/merchstyles.css" rel="stylesheet" type="text/css">
@@ -10,7 +16,18 @@
 	
 	<div class="logo">
 		<image src="<?php echo base_url(); ?>static/icon/logo1.png" alt="logo" style="width:120px; height:70px; margin:10px 10px 0 10px;">
-	</div>
+	   
+        <?php
+            if (isset ($username)){
+                echo "<li style='float: right'><p><a href='http://localhost/ciweb/index.php/adv/logout'>Log Out</a></p></li>";
+                echo "<p style='font-family :cho; font-size: 25px;text-align: center;color: #b23333;'>Hello " . $username . " ! </p>";
+            }
+            else{
+                echo "<li style='float: right'><p><a href='http://localhost/ciweb/index.php/adv/login'>Log In</a></p></li>";
+            }
+        ?>
+            
+    </div>
 	
 	<header class="head">
 		<ul>
@@ -32,7 +49,7 @@
 			<p><strong><?php echo $data['nama_barang'] ?></strong></p>
 			<p><?php echo $data['harga'] ?></p>
             
-            <form method="post" action= "http://localhost/ciweb/index.php/adv/merchform">
+            <form method="post" action= "<?php echo 'http://localhost/ciweb/index.php/adv/merchform' . '/' . $data['id_barang']; ?>" > 
 			<button class="btn">Buy</button>
             </form>
 		</div>

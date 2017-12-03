@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html>
+<?php
+    if(isset($this->session->userdata['logged_in'])){
+        $username = ($this->session->userdata['logged_in']['username']);
+    }
+?>
+
 <head>
 	<title>Official Web Of ADV</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +16,15 @@
 	<header class="head">
 		<ul>
 		<li style ="float: left"><image src="<?php echo base_url(); ?>static/icon/logo1.png" alt="logo1.jpg" style="width:120px; height:70px; margin:10px;"></li>
-		<li style="float: right"><p><a href="http://localhost/ciweb/index.php/adv/login">Log In</a></p></li>
+        <?php
+            if (isset ($username)){
+                echo "<li style='float: right'><p><a href='http://localhost/ciweb/index.php/adv/logout'>Log Out</a></p></li>";
+                echo "<p style='font-family :cho; font-size: 25px;text-align: center;color: #b23333;'>Hello " . $username . " ! </p>";
+            }
+            else{
+                echo "<li style='float: right'><p><a href='http://localhost/ciweb/index.php/adv/login'>Log In</a></p></li>";
+            }
+        ?>
 		</ul>
 	</header>
 	

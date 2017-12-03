@@ -13,12 +13,23 @@
 			  <li><a href="http://localhost/ciweb/index.php/adv/signup">Sign up</a></li>
 			  <li><a class="active" href="#">Log in</a></li>
 			</ul>
-			<div class="isi">
+            <?php echo form_open('index.php/adv/login'); ?>
+            <?php
+             echo "<div class='error_msg'>";
+              if (isset($error_message)) {
+               echo $error_message;
+              }
+             echo validation_errors();
+             echo "</div>";
+            ?>
+            
+			<div class="isi">    
 				<div class="tulisan">USERNAME</div>
-				<center><input type="text" name="user"></center>
+				<center><input type="text" name="username"></center>
 				<div class="tulisan">PASSWORD</div>
 				<center><input type="text" name="password"></center>
 				<input type="submit" value="Log in"></center>
+                <?php echo form_close(); ?>
 			</div>	
 		</div>
 		</center>
