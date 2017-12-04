@@ -1,0 +1,92 @@
+	body, html {
+		height: 100%;
+		margin:0;
+	}
+	@font-face{
+		font-family: cho;
+		src : url(../fonts/Chosence.ttf);
+	}
+	@font-face{
+		font-family: eth;
+		src: url(../fonts/ETH.ttf);
+	}
+	@font-face{
+		font-family: sego;
+		src: url(../fonts/segoeui.ttf);
+	}
+	@font-face{
+		font-family: adv;
+		src : url(../fonts/CAFETA_.TTF);
+	}
+	@font-face{
+		font-family: candara;
+		src : url(../fonts/Candara.ttf);
+	}
+	.head{
+		width:100%;
+		background-color:#212121;
+		position:sticky;
+	}
+	.head ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		top:0;
+		overflow: hidden;
+		background-color: #212121;
+		width:100%;
+	}
+	.head li a {
+		float:left;
+		display: block;
+		color: #edf0da;
+		text-align: center;
+		text-decoration:none;
+		font-family: cho;
+		font-size:20px;
+		padding: 10px 70px;
+	}
+	.head li a:hover {
+		background-color: #f0dfad;
+		color: #b23333;
+	}
+	.all{
+		background-image: url('tntbg.jpg');
+		background-size: 100% 100%;
+		background-attachment: fixed;
+		margin: 0px 0px 0px 0px;
+	}
+	/*.bg{
+		margin:0px 7% 0px;
+		background-color:rgba(240, 223, 173, 0.7);
+		padding:5px;
+		text-align:center;
+	}*/
+	.bg h1{
+		color:#b23333;
+		font-family:eth;
+	}
+	.ticket{
+		font-family:sego;
+		font-size:20px;
+		padding:5px;
+		text-decoration:none;
+	}
+	.ticket p:hover{
+		background-color:#edf0da;
+		color: #b23333;
+		width:auto;
+		margin:0px 200px;
+	}
+	.foot{
+		background-color:#212121;
+		text-align:center;
+	}
+	.foot p{
+		font-size:20px; 
+		font-family:cho; 
+		margin:0; 
+		padding:3px;
+		color:#edf0da;
+	}
+	
