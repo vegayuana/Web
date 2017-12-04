@@ -4,7 +4,7 @@
 	<head>
     <title>Form Merch</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>static/TicketTour/style1.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>static/css/formstyle.css">
     </head>
 </html>
 <body>
@@ -24,14 +24,14 @@
 	<div class="bg">
         <div class="isi">
         <div class="judul">
+            <center>
              <?php foreach($response->result() as $data){ ?>
-                <img src="<?php echo base_url(); ?>static/css/<?php echo $data->img ?>"  width="100%">
-                <p><?php echo $data->nama_barang ?></p>
-                <p><?php echo $data->harga ?></p>
+                <img src="<?php echo base_url(); ?>static/css/<?php echo $data->img ?>"  width="30%">
+            </center>
+                <p1><?php echo $data->nama_barang ?></p1>
+                <p2><br><?php echo $data->harga ?></p2>
             <?php } ?>
-            
             </div>
-        <div class="gambar"><img src="merch1.jpg" alt="merch" width="100%"></div>
         <form action="">
             <div class="isian">
             <div class="tulisan">Name</div>
