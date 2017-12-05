@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <?php
     if(isset($this->session->userdata['logged_in'])){
         $username = ($this->session->userdata['logged_in']['username']);
@@ -15,20 +14,20 @@
 </head>
 
 <body>
-	<div class="head">
-		<ul>
-		<li style ="float: left"><image src="<?php echo base_url(); ?>static/icon/logo1.png" alt="logo1.jpg" style="width:120px; height:70px; margin:10px;"></li>
+	<div class="logo">
+		<image src="<?php echo base_url(); ?>static/icon/logo1.png" style="width:120px; height:70px; margin:10px 10px 0 10px;">
+	   
         <?php
             if (isset ($username)){
-                echo "<li style='float: right;'><p><a href='http://localhost/ciweb/index.php/adv/logout'>Log Out</a></p></li>";
+                 echo "<li style='float: right; display: block; list-style-type: none; background-color:#b23333; color: #edf0da ;border-radius:5px; text-align: center; font-family: eth; font-size:20px; text-decoration:none; margin:20px 60px 10px 0px;padding: 10px 10px 0px 10px;'><p><a href='http://localhost/ciweb/index.php/adv/login'>Log In</a></p></li>";
                 echo "<p style='font-family :cho; font-size: 25px;text-align: center;color: #b23333;'>Hello " . $username . " ! </p>";
             }
             else{
-                echo "<li style='float: right;'><p><a href='http://localhost/ciweb/index.php/adv/login'>Log In</a></p></li>";
+                echo "<li style='float: right; display: block; list-style-type: none; background-color:#b23333; color: #edf0da ;border-radius:5px; text-align: center; font-family: eth; font-size:20px; text-decoration:none; margin:20px 60px 10px 0px;padding: 10px 10px 0px 10px;'><p><a href='http://localhost/ciweb/index.php/adv/login'>Log In</a></p></li>";
             }
         ?>
-		</ul>
-		
+    </div>
+    <div class="head">	
 		<ul>
 			<li><a href="http://localhost/ciweb/index.php/adv" >Home</a></li>
 			<li><a href="http://localhost/ciweb/index.php/adv/news" >News</a></li>
@@ -90,8 +89,8 @@
 		
 		<h1>Rock On Tour</h1>
 			<?php foreach($response as $data){ 
-				echo "<p><a class='ticket' ;href =''> $data[date] - $data[place] </a></p>";
-				}
+				echo "<p><a class='ticket' href ='http://localhost/ciweb/index.php/adv/ticketform/$data[no_ticket]'> $data[date] - $data[place] </a></p>";
+            }
 			?>
 		</div>
 	</div>

@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
-
+    <?php
+        if(isset($this->session->userdata['logged_in'])){
+            $id = ($this->session->userdata['logged_in']['id']);
+        }
+        
+    ?>
 	<head>
     <title>Form Merch</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,14 +37,17 @@
                 <p2><br><?php echo $data->harga ?></p2>
             <?php } ?>
             </div>
-        <form action="">
+        <form action="localhost/ciweb/index.php/adv/ticketform" method="post">
             <div class="isian">
-            <div class="tulisan">Name</div>
-                <input type="text" name="name">
+                <input type="hidden" name="id" value="<?php echo $id ?>">
             <div class="tulisan">Phone Number</div>
                 <input type="text" name="phone"><br>
             <div class="tulisan">Amount</div>
                 <input type="number" name="quantity" min="1" max="50"><br>
+            <div class="tulisan">Price</div>
+                <input type="text" name="price" id="price" readonly><br>
+            <div class="tulisan">Total</div>
+                <input type="text" name="total" id="total" readonly><br>
             <div class="tulisan">Address</div>
                 <input type="text" name="alamat">
             </div>

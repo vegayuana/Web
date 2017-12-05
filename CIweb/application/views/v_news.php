@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html>
-    
     <?php
         if(isset($this->session->userdata['logged_in'])){
             $username = ($this->session->userdata['logged_in']['username']);
         }
     ?>
-
-	<head>
-		<title> News </title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="<?php echo base_url(); ?>static/css/newsstyles.css">
-	</head>
-	<body>
-		<div class="logo">
-			<image  src="<?php echo base_url(); ?>static/icon/logo1.png" alt="logo" style="width:120px; height:70px; margin:10px 10px 0 10px;">
-            <?php
+<head>
+	<title> News </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>static/css/newsstyles.css">
+</head>
+<body>
+	<div class="logo">
+		<image  src="<?php echo base_url(); ?>static/icon/logo1.png" alt="logo" style="width:120px; height:70px; margin:10px 10px 0 10px;">
+       <?php
             if (isset ($username)){
-                echo "<li style='float: right'><p><a href='http://localhost/ciweb/index.php/adv/logout'>Log Out</a></p></li>";
+                 echo "<li style='float: right; display: block; list-style-type: none; background-color:#b23333; color: #edf0da ;border-radius:5px; text-align: center; font-family: eth; font-size:20px; text-decoration:none; margin:20px 60px 10px 0px;padding: 10px 10px 0px 10px;'><p><a href='http://localhost/ciweb/index.php/adv/login'>Log In</a></p></li>";
                 echo "<p style='font-family :cho; font-size: 25px;text-align: center;color: #b23333;'>Hello " . $username . " ! </p>";
             }
             else{
-                echo "<li style='float: right'><p><a href='http://localhost/ciweb/index.php/adv/login'>Log In</a></p></li>";
+                 echo "<li style='float: right; display: block; list-style-type: none; background-color:#b23333; color: #edf0da ;border-radius:5px; text-align: center; font-family: eth; font-size:20px; text-decoration:none; margin:20px 60px 10px 0px;padding: 10px 10px 0px 10px;'><p><a href='http://localhost/ciweb/index.php/adv/login'>Log In</a></p></li>";
             }
             ?>
 		</div>
 		
-		<header class="head">
+        <header class="head">
 		<ul>
             <li><a href="http://localhost/ciweb/index.php/adv" >Home</a></li>
             <li><a href="#" >News</a></li>

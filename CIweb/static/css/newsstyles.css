@@ -2,6 +2,11 @@ body, html {
 	height: 100%;
 	margin:0;
 }
+.logo{
+		background-color:#212121;
+        margin: 0;
+        padding:0;
+}
 	@font-face{
 		font-family: cho;
 		src : url(../fonts/Chosence.ttf);
@@ -22,49 +27,34 @@ body, html {
 		font-family: candara;
 		src : url(../fonts/Candara.TTF);
 	}
-.logo{
-	background-color:#212121;
-}
-.logo li a {
-		display: block;
-		background-color:#b23333;
-		color: #edf0da;
-		border-radius:5px;
-		text-align: center;
-		font-family: eth;
-		font-size:20px;
-		text-decoration:none;
-		margin:20px 60px 10px 0px;
-		padding: 15px;
+.head{
+		width:100%;
+		background-color:#212121;
+		position:sticky;
 	}
-.logo li a:hover {
-		background-color: rgba(240, 223, 173, 0.9);
-		color: #212121;
-		transition:0.2s
-}
-.head ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	top:0;
-	overflow: hidden;
-	background-color: #212121;
-	width:100%;
-}
-.head li a {
-	float:left;
-	display: block;
-	color: #edf0da;
-	text-align: center;
-	text-decoration:none;
-	font-family: cho;
-	font-size:20px;
-	padding: 10px 70px;
-}
-.head li a:hover {
-	background-color: #f0dfad;
-	color: #b23333;
-}
+	.head ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		top:0;
+		overflow: hidden;
+		background-color: #212121;
+		width:100%;
+	}
+	.head li a {
+		float:left;
+		display: block;
+		color: #edf0da;
+		text-align: center;
+		text-decoration:none;
+		font-family: cho;
+		font-size:20px;
+		padding: 10px 70px;
+	}
+	.head li a:hover {
+		background-color: #f0dfad;
+		color: #b23333;
+	}
 .foot{
 	background-color:#212121;
 	text-align:center;

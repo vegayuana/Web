@@ -2,6 +2,9 @@
 		height: 100%;
 		margin:0;
 	}
+    .logo{
+		background-color:#212121;
+	}
 	@font-face{
 		font-family: cho;
 		src : url(../fonts/Chosence.ttf);
@@ -25,7 +28,6 @@
 	.head{
 		width:100%;
 		background-color:#212121;
-		position:sticky;
 	}
 	.head ul {
 		list-style-type: none;
@@ -56,12 +58,12 @@
 		background-attachment: fixed;
 		margin: 0px 0px 0px 0px;
 	}
-	/*.bg{
+	.bg{
 		margin:0px 7% 0px;
 		background-color:rgba(240, 223, 173, 0.7);
 		padding:5px;
 		text-align:center;
-	}*/
+	}
 	.bg h1{
 		color:#b23333;
 		font-family:eth;
@@ -70,9 +72,10 @@
 		font-family:sego;
 		font-size:20px;
 		padding:5px;
+        list-style-type: none;
 		text-decoration:none;
 	}
-	.ticket p:hover{
+	.ticket a:hover{
 		background-color:#edf0da;
 		color: #b23333;
 		width:auto;

@@ -27,7 +27,7 @@
 				<div class="tulisan">USERNAME</div>
 				<center><input type="text" name="username"></center>
 				<div class="tulisan">PASSWORD</div>
-				<center><input type="text" name="password"></center>
+				<center><input type="password" name="password"></center>
 				<input type="submit" value="Log in"></center>
                 <?php echo form_close(); ?>
 			</div>	

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-    
     <?php
         if(isset($this->session->userdata['logged_in'])){
             $username = ($this->session->userdata['logged_in']['username']);
         }
     ?>
+<head>
 	<title>Merchandise Page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>static/css/merchstyles.css" rel="stylesheet" type="text/css">
@@ -19,11 +18,11 @@
 	   
         <?php
             if (isset ($username)){
-                echo "<li style='float: right'><p><a href='http://localhost/ciweb/index.php/adv/logout'>Log Out</a></p></li>";
+                 echo "<li style='float: right; display: block; list-style-type: none; background-color:#b23333; color: #edf0da ;border-radius:5px; text-align: center; font-family: eth; font-size:20px; text-decoration:none; margin:20px 60px 10px 0px;padding: 10px 10px 0px 10px;'><p><a href='http://localhost/ciweb/index.php/adv/login'>Log In</a></p></li>";
                 echo "<p style='font-family :cho; font-size: 25px;text-align: center;color: #b23333;'>Hello " . $username . " ! </p>";
             }
             else{
-                echo "<li style='float: right'><p><a href='http://localhost/ciweb/index.php/adv/login'>Log In</a></p></li>";
+                echo "<li style='float: right; display: block; list-style-type: none; background-color:#b23333; color: #edf0da ;border-radius:5px; text-align: center; font-family: eth; font-size:20px; text-decoration:none; margin:20px 60px 10px 0px;padding: 10px 10px 0px 10px;'><p><a href='http://localhost/ciweb/index.php/adv/login'>Log In</a></p></li>";
             }
         ?>
             
