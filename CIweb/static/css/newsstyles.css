@@ -3,9 +3,7 @@ body, html {
 	margin:0;
 }
 .logo{
-		background-color:#212121;
-        margin: 0;
-        padding:0;
+	background-color:#212121;
 }
 	@font-face{
 		font-family: cho;
@@ -27,10 +25,9 @@ body, html {
 		font-family: candara;
 		src : url(../fonts/Candara.TTF);
 	}
-.head{
+	.head{
 		width:100%;
 		background-color:#212121;
-		position:sticky;
 	}
 	.head ul {
 		list-style-type: none;
@@ -55,155 +52,47 @@ body, html {
 		background-color: #f0dfad;
 		color: #b23333;
 	}
-.foot{
-	background-color:#212121;
-	text-align:center;
-}
-.foot p{
-	font-size:20px; 
-	font-family:cho; 
-	margin:0; 
-	padding:3px;
-	color:#edf0da;
-}
-.connect {
-	padding: 3px;
-}
-#content {
-	margin-top:0;
-	width: auto;
-	height: 1200px;
-	background-image: url("newsbg.png");
-	background-attachment: fixed;
-}
-.berita{
-	margin-left: 450px;
-	margin-right: 30px;
-}
-.judul{
-	padding-top : 40px;
-	padding-bottom: 30px;
-	font-size: 40pt;
-	font-family: eth;
-	color: #B23333;
-	font-weight : bold;
-	text-align: center;
-}
-.isinya{
-	font-family: teen;
-	color : #EDF0DA;
-	font-size: 15pt;
-	text-align: justify;
-	width: 85%;
-	margin-bottom: 15px;
-}
-.box{
-	margin-bottom: 20px;
-}
-			.huruf {
-				letter-spacing: 2px;
-				margin-bottom: 2px;
-				font-family: candara;
-				color : #EDF0DA;
-			}
-		
 	
+	#content {
+		margin-top:0;
+		width: 100%;
+		height: auto;
+		background-image: url("newsbg.png");
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat:no-repeat;
+	}
+	.bagian{
+		margin:0% 5% 0% 25%;
+		background-color: rgba(168, 155, 140, 0.2);
+		padding:20px;
+	}
+	.judul{
+		padding-top : 40px;
+		padding-bottom: 30px;
+		font-size: 40pt;
+		font-family: eth;
+		color: #B23333;
+		font-weight : bold;
+		text-align: center;
+	}
+	.isi{
+		font-family: teen;
+		color : #EDF0DA;
+		font-size: 15pt;
+		text-align: justify;
+		width: 85%;
+		margin-bottom: 15px;
+	}
 	
-
-			.connect {
-				padding: 3px;
-			}
-			#content { 
-				margin-top:0; 
-				width: 100%;
-				height: auto;
-				background-image: url("newsbg.png");
-				background-attachment: fixed;
-				background-size: cover;
-				background-repeat:no-repeat;
-				
-			}
-			.berita{ 
-				margin: 0 0 0 30%;
-			}
-			.news{ 
-				padding : 40px;
-				font-size: 120pt;
-				font-family: eth;
-				color: #B23333;
-				font-weight : bold;
-				text-align: center;
-			}
-			.isi {
-				width: auto;
-				height: 200px;
-				padding: 10px;
-			}
-			.gambar {
-				width: auto;
-				height : auto;
-				margin: 0px;
-				float: left;
-			}
-			.cerita {
-				margin-left : 220px;
-				width: auto;
-				height: 200px;
-			}
-			.judul {
-				margin: 10px;
-				font-family: eth;
-				font-size: 20pt;
-				font-weight : bold;
-			}
-			.judul a{
-				color: #F0DFAD;
-				text-decoration: none;
-			}
-			.judul a:hover {
-				color : #212121;
-				transition: 0.5s;
-			}	
-			.isinya{
-				font-family: eth;
-				color : #EDF0DA;
-				font-size: 15pt;
-				margin-bottom: 15px;
-			}
-	
-			.read{
-				background-color: none;
-			}
-			.read a {
-				width: auto;
-				height: 20px;
-				display: block;
-				color: #EDF0DA;
-				text-align: center;
-				padding: 14px 16px;
-				text-decoration: none;
-				font-family: eth;
-			}
-			.read a:hover {
-				background-color: #F0DFAD;
-				color : #B23333;
-				transition: 0.5s;
-			}	
-			.sticky{
-				position: -webkit-sticky;
-				position: sticky;
-				top: 0;
-			}
-
-.foot{
-	background-color:#212121;
-	text-align:center;
-}
-.foot p{
-	font-size:20px; 
-	font-family:cho; 
-	margin:0; 
-	padding:3px;
-	color:#edf0da;
-	position:bottom;
-}
+	.foot{
+		background-color:#212121;
+		text-align:center;
+	}
+	.foot p{
+		font-size:20px; 
+		font-family:cho; 
+		margin:0; 
+		padding:3px;
+		color:#edf0da;
+	}

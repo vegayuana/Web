@@ -7,13 +7,12 @@ class m_ticketform extends CI_Model{
         $this->load->database();
     }
     
-    public function input($quantity, $phone, $address, $festival, $price, $total, $no_ticket, $id){
+    public function input($quantity, $phone, $address, $price, $total, $no_ticket, $id){
         
         $data = array(
             'jumlah_tiket' => $quantity,
             'phone' => $phone,
             'alamat' => $address,
-            'festival' => $festival,
             'harga' => $price,
             'total' => $total,
             'no_ticket' => $no_ticket,

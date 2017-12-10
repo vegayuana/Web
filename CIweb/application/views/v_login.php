@@ -15,7 +15,7 @@
 			</ul>
             <?php echo form_open('index.php/adv/login'); ?>
             <?php
-             echo "<div class='error_msg'>";
+             echo "<div class='error_msg' style='color:#b23333; padding-top:15px;'>";
               if (isset($error_message)) {
                echo $error_message;
               }

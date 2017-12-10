@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <?php
-        if(isset($this->session->userdata['logged_in'])){
-            $id = ($this->session->userdata['logged_in']['id']);
-        }
-        
-    ?>
-
-	<head>
+<?php
+    if(isset($this->session->userdata['logged_in'])){
+        $id = ($this->session->userdata['logged_in']['id']);
+    }
+     if(isset($this->session->userdata['logged_in'])){
+        $username = ($this->session->userdata['logged_in']['username']);
+     }  
+?>
+<head>
     <title>Form Merch</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>static/css/formstyle.css">
-    </head>
-</html>
+</head>
+    
 <body>
 	<div class="logo">
-		<image src="<?php echo base_url(); ?>static/icon/logo1.png" alt="logo" style="width:120px; height:70px; margin:10px 10px 0 10px;">
-	</div>
+		<image src="<?php echo base_url(); ?>static/icon/logo1.png" alt="logo" style="width:120px; height:70px; margin:10px 10px 0 10px;">    
+    </div>
 	
 	<header class="head">
 		<ul>
@@ -24,6 +25,10 @@
 		<li><a href="http://localhost/ciweb/index.php/adv/news">News</a></li>
 		<li><a href="http://localhost/ciweb/index.php/adv/tickettour">Tours & Ticket</a></li>
 		<li><a href="http://localhost/ciweb/index.php/adv/merch">Merch</a></li>
+        <?php
+        if (isset ($username)){
+            echo "<p style='font-family :cho; font-size: 25px;text-align: center;color: #b23333; margin:0;'>Hello " . $username . " ! </p>";
+        }?>
 		</ul>
 	</header>
         
@@ -44,15 +49,8 @@
                 <input type="text" name="phone"><br>
             <div class="tulisan">Address</div>
                 <input type="text" name="address"><br>
-            <div class="tulisan">Category</div>
-                <select name="festival" id="festival" onchange="Update();"><br>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                </select><br>
             <div class="tulisan">Price</div>
-                <input type="text" name="price" id="price" readonly><br>
+                <input type="text" name="price" id="price" value="<?php echo $data->price ?>" readonly ><br>
             <div class="tulisan">Total</div>
                 <input type="text" name="total" id="total" readonly><br>
             <div class="tulisan">No Ticket</div>
@@ -107,3 +105,4 @@
         }
   </script>        
 </body>
+</html>

@@ -29,9 +29,11 @@
         public function insert_to_users(){
             $this->load->model('m_signup');
             $this->m_signup->insert_to_users();
-            $this->load->view('v_home');
+            $this->load->view('v_suksessignup');
         }
         public function news(){
+            $this->load->model('m_news');
+			$data['response'] = $this->m_news->get();
 			$this->load->view('v_news');
 		}
 		public function merch(){
@@ -55,26 +57,7 @@
             $id_barang = $this->input->post('id_barang');
             $id = $this->input->post('id');
             
-            if($this->m_merchform->input($quantity, $phone, $address, $price, $total, $id_barang, $id)){
-                $this->load->view('v_sukses');
-            }
-            else{
-                $this->load->view('v_merchform');
-            }
-            
-        }
-        public function submitticket(){
-            $this->load->model('m_ticketform');
-            $quantity = $this->input->post('quantity');
-            $phone = $this->input->post('phone');
-            $address = $this->input->post('address');
-            $festival = $this->input->post('festival');
-            $price = $this->input->post('price');
-            $total = $this->input->post('total');
-            $no_ticket = $this->input->post('no_ticket');
-            $id = $this->input->post('id');
-            
-            if($this->m_ticketform->input($quantity, $phone, $address, $festival, $price, $total, $no_ticket, $id)){
+            if($this->m_merchform->input($quantity, $phone, $address, $festival, $price, $total, $no_ticket, $id)){
                 $this->load->view('v_sukses');
             }
             else{
@@ -87,13 +70,30 @@
 			$data['response'] = $this->m_ticket->get_ticket();
 			$this->load->view('v_tickettour', $data);
 		}
-		public function ticketform(){
+        public function ticketform(){
 			$no_ticket = $this->uri->segment(3);
             $this->load->model('m_ticketform');
 			$data['response'] = $this->m_ticketform->get($no_ticket);
 			$this->load->view('v_ticketform', $data);
 		}
-        
+        public function submitticket(){
+            $this->load->model('m_ticketform');
+            $quantity = $this->input->post('quantity');
+            $phone = $this->input->post('phone');
+            $address = $this->input->post('address');
+            $price = $this->input->post('price');
+            $total = $this->input->post('total');
+            $no_ticket = $this->input->post('no_ticket');
+            $id = $this->input->post('id');
+            
+            if($this->m_ticketform->input($quantity, $phone, $address, $price, $total, $no_ticket, $id)){
+                $this->load->view('v_sukses');
+            }
+            else{
+                $this->load->view('v_ticketform');
+            }
+            
+        }
         
         // Check for user login process
  

@@ -15,26 +15,29 @@
 
 <body>
 	<div class="logo">
-		<image src="<?php echo base_url(); ?>static/icon/logo1.png" style="width:120px; height:70px; margin:10px 10px 0 10px;">
+		<image src="<?php echo base_url(); ?>static/icon/logo1.png" alt="logo" style="width:120px; height:70px; margin:10px 10px 0 10px;">
 	   
         <?php
             if (isset ($username)){
-                 echo "<li style='float: right; display: block; list-style-type: none; background-color:#b23333; color: #edf0da ;border-radius:5px; text-align: center; font-family: eth; font-size:20px; text-decoration:none; margin:20px 60px 10px 0px;padding: 10px 10px 0px 10px;'><p><a href='http://localhost/ciweb/index.php/adv/login'>Log In</a></p></li>";
-                echo "<p style='font-family :cho; font-size: 25px;text-align: center;color: #b23333;'>Hello " . $username . " ! </p>";
+                 echo "<li style='float: right; display: block; list-style-type: none; background-color:#b23333; color: #edf0da ;border-radius:5px; text-align: center; font-family: eth; font-size:20px; text-decoration:none; margin:20px 60px 10px 0px;padding: 10px 10px 0px 10px;'><p><a href='http://localhost/ciweb/index.php/adv/logout'>Log Out</a></p></li>";
             }
             else{
                 echo "<li style='float: right; display: block; list-style-type: none; background-color:#b23333; color: #edf0da ;border-radius:5px; text-align: center; font-family: eth; font-size:20px; text-decoration:none; margin:20px 60px 10px 0px;padding: 10px 10px 0px 10px;'><p><a href='http://localhost/ciweb/index.php/adv/login'>Log In</a></p></li>";
             }
-        ?>
+        ?>     
     </div>
-    <div class="head">	
+    <header class="head">	
 		<ul>
 			<li><a href="http://localhost/ciweb/index.php/adv" >Home</a></li>
 			<li><a href="http://localhost/ciweb/index.php/adv/news" >News</a></li>
 			<li><a href="#">Tours & Ticket</a></li>
 			<li><a href="http://localhost/ciweb/index.php/adv/merch">Merch</a></li>
+            <?php
+            if (isset ($username)){
+                echo "<p style='font-family :cho; font-size: 25px;text-align: center;color: #b23333; margin:0;'>Hello " . $username . " ! </p>";
+            }?>
 		</ul>
-	</div>
+	</header>
 	
 	<div class="all">
 		<div class="bg">
@@ -88,10 +91,21 @@
 
 		
 		<h1>Rock On Tour</h1>
-			<?php foreach($response as $data){ 
+            <?php
+            if (isset ($username)){
+                foreach($response as $data){ 
 				echo "<p><a class='ticket' href ='http://localhost/ciweb/index.php/adv/ticketform/$data[no_ticket]'> $data[date] - $data[place] </a></p>";
+                }
             }
-			?>
+            else{ ?>
+                <a style="color:#b23333; font-family: cho; text-decoration:none;" href="http://localhost/ciweb/index.php/adv/login">Login To Buy Ticket</a>
+                <?php
+                foreach($response as $data){ 
+				echo "<p class='ticket' href ='http://localhost/ciweb/index.php/adv/ticketform/$data[no_ticket]'> $data[date] - $data[place]</p>";
+                }
+            }
+        ?> 
+			
 		</div>
 	</div>
 

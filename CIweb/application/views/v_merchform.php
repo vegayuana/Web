@@ -4,7 +4,9 @@
         if(isset($this->session->userdata['logged_in'])){
             $id = ($this->session->userdata['logged_in']['id']);
         }
-        
+        if(isset($this->session->userdata['logged_in'])){
+            $username = ($this->session->userdata['logged_in']['username']);
+        }   
     ?>
 	<head>
     <title>Form Merch</title>
@@ -15,7 +17,6 @@
 <body>
 	<div class="logo">
 		<image src="<?php echo base_url(); ?>static/icon/logo1.png" alt="logo" style="width:120px; height:70px; margin:10px 10px 0 10px;">
-	</div>
 	
 	<header class="head">
 		<ul>
@@ -23,6 +24,10 @@
 		<li><a href="http://localhost/ciweb/index.php/adv/news">News</a></li>
 		<li><a href="http://localhost/ciweb/index.php/adv/tickettour">Tours & Ticket</a></li>
 		<li><a href="http://localhost/ciweb/index.php/adv/merch">Merch</a></li>
+        <?php
+        if (isset ($username)){
+            echo "<p style='font-family :cho; font-size: 25px;text-align: center;color: #b23333; margin:0;'>Hello " . $username . " ! </p>";
+        }?>
 		</ul>
 	</header>
         
@@ -34,18 +39,17 @@
                 <img src="<?php echo base_url(); ?>static/css/<?php echo $data->img ?>"  width="30%">
             </center>
                 <p1><?php echo $data->nama_barang ?></p1>
-                <p2><br><?php echo $data->harga ?></p2>
+                <br>
+                <p1><?php echo $data->harga ?>$</p1>
             <?php } ?>
             </div>
-        <form action="localhost/ciweb/index.php/adv/ticketform" method="post">
+        <form action="http://localhost/ciweb/index.php/adv/submitmerch" method="post">
             <div class="isian">
                 <input type="hidden" name="id" value="<?php echo $id ?>">
             <div class="tulisan">Phone Number</div>
                 <input type="text" name="phone"><br>
             <div class="tulisan">Amount</div>
                 <input type="number" name="quantity" min="1" max="50"><br>
-            <div class="tulisan">Price</div>
-                <input type="text" name="price" id="price" readonly><br>
             <div class="tulisan">Total</div>
                 <input type="text" name="total" id="total" readonly><br>
             <div class="tulisan">Address</div>
