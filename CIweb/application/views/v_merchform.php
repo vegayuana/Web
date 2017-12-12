@@ -46,10 +46,16 @@
         <form action="http://localhost/ciweb/index.php/adv/submitmerch" method="post">
             <div class="isian">
                 <input type="hidden" name="id" value="<?php echo $id ?>">
+                <?php foreach($response->result() as $data){ ?>
+                    <input type="hidden" name="id_barang" value="<?php echo $data->id_barang ?>">
+                    <input type="hidden" name="harga" id="price" value="<?php echo $data->harga ?>">
+                <?php } ?>
+            </div>
+                
             <div class="tulisan">Phone Number</div>
                 <input type="text" name="phone"><br>
             <div class="tulisan">Amount</div>
-                <input type="number" name="quantity" min="1" max="50"><br>
+                <input type="number" name="quantity" id="amount" min="1" max="50"  onchange="Update();"><br>
             <div class="tulisan">Total</div>
                 <input type="text" name="total" id="total" readonly><br>
             <div class="tulisan">Address</div>
@@ -69,4 +75,13 @@
 		<a href="https://www.youtube.com/watch?v=fEOyePhElr4"><image src="<?php echo base_url(); ?>static/icon/yt.png" alt="youtube" style="width:45px; height:45px;"></a>
 		<a href="https://www.instagram.com/dualipa"><image src="<?php echo base_url(); ?>static/icon/ig.png" alt="ig" style="width:45px; height:45px;">
 	</footer>
+            
+    <script type="text/javascript">
+        function Update() {
+                var amount = parseFloat(document.getElementById('amount').value);
+                var price = parseFloat(document.getElementById('price').value);
+                var total = amount * price;
+                document.getElementById('total').value = total;
+            }
+    </script>  
 </body>

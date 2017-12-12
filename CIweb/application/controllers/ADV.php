@@ -34,7 +34,7 @@
         public function news(){
             $this->load->model('m_news');
 			$data['response'] = $this->m_news->get();
-			$this->load->view('v_news');
+			$this->load->view('v_news', $data);
 		}
 		public function merch(){
 			$this->load->model('m_merch');
@@ -51,13 +51,13 @@
             $this->load->model('m_merchform');
             $quantity = $this->input->post('quantity');
             $phone = $this->input->post('phone');
-            $address = $this->input->post('address');
-            $price = $this->input->post('price');
+            $address = $this->input->post('alamat');
+            $price = $this->input->post('harga');
             $total = $this->input->post('total');
             $id_barang = $this->input->post('id_barang');
             $id = $this->input->post('id');
             
-            if($this->m_merchform->input($quantity, $phone, $address, $festival, $price, $total, $no_ticket, $id)){
+            if($this->m_merchform->input($quantity, $phone, $address, $price, $total, $id_barang, $id)){
                 $this->load->view('v_sukses');
             }
             else{

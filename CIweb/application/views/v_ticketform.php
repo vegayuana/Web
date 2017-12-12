@@ -73,36 +73,11 @@
             
     <script type="text/javascript">
         function Update() {
-            var festival=document.getElementById('festival').value;
-            if(festival=='A'){
-                document.getElementById('price').value = 800;
                 var amount = parseFloat(document.getElementById('amount').value);
                 var price = parseFloat(document.getElementById('price').value);
                 var total = amount * price;
                 document.getElementById('total').value = total;
             }
-            else if(festival=='B'){
-                document.getElementById('price').value = 800;
-                var amount = parseFloat(document.getElementById('amount').value);
-                var price = parseFloat(document.getElementById('price').value);
-                var total = amount * price;
-                document.getElementById('total').value = total;
-            }
-            else if(festival=='C'){
-                document.getElementById('price').value = 750;
-                var amount = parseFloat(document.getElementById('amount').value);
-                var price = parseFloat(document.getElementById('price').value);
-                var total = amount * price;
-                document.getElementById('total').value = total;
-            }
-            else {
-                document.getElementById('price').value = 750;
-                var amount = parseFloat(document.getElementById('amount').value);
-                var price = parseFloat(document.getElementById('price').value);
-                var total = amount * price;
-                document.getElementById('total').value = total;
-            }
-        }
   </script>        
 </body>
 </html>
