@@ -43,13 +43,17 @@
 		<div class="judul">NEWS</div>
 	  <div class="isi">
 	     <?php foreach($response as $data){ ?>
-                    <p><strong style="font-family:candara; font-size:16px; "><?php echo $data['isi_pre'] ?></strong></p>	
-                    <?php } ?>
-          
-          <p id="demo" style="display:none;"><strong style="font-family:candara; font-size:16px;"><?php echo $data['isi'] ?> . . . </strong></p>
-          
-          <center><button type="button" id="tombol" onclick="document.getElementById('demo').style.display='block'" style="font-family: candara; font-size:18px; color:#f0dfad; background-color:#b23333;">Read More</button></center>
-	  </div>
+				<center><strong style='font-family: eth; color:#b23333'><?php echo $data['judul'] ?></strong></center>
+				<center><strong style='font-family: eth; color:#b23333'><?php echo $data['tanggal'] ?></strong></center>
+                <p><strong style="font-family:candara; font-size:16px; "><?php echo $data['isi_pre'] ?></strong></p>
+				<p id='con'>. . .</p>
+				<p id="demo" style="display:none;"><strong style="font-family:candara; font-size:16px;"><?php echo $data['isi'] ?> </strong></p>
+				<center><button type="button" id="tombol" onclick="document.getElementById('demo').style.display='block', document.getElementById('con').style.display='none', document.getElementById('tombol').style.display='none'" style="font-family: candara; font-size:18px; color:#f0dfad; background-color:#b23333;">Read More</button></center>
+				<br>
+				<br>
+		<?php } ?>
+
+		 </div>
 	</div>
 	</div>
 
